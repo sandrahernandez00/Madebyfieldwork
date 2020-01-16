@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12_Mdebyfieldwork</title>
+    <script src="https://kit.fontawesome.com/8eb1fe8e75.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --rosa: #EB80A8;
+            --negro: #3C3C3B;
+            --griso: #706F6F;
+            --grism: #E1DEDA;
+            --terra: #EFECE7;
+        }
+        /*reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*vaors entrada*/
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        /*NAV*/
+        nav {
+            width: 100%;
+            padding: 30px 20px;
+            display: flex;
+            background: var(--terra);
+            justify-content: space-between;
+            position: fixed;
+        }
+        nav h1{
+            color: var(--rosa);
+            float: left;
+            border-bottom: 4px solid var(--rosa);    
+        }
+        .navegation{
+            padding: 5px 0 0 0;
+        }
+        .navegation a{
+            margin: 0 20px 0 0;
+            transition: 0.3s color;
+            color: var(--negro);
+        }
+        .navegation a:hover{
+            color: var(--rosa);
+        }
+        nav a,
+        nav h1 {
+            font-size: 1em;
+            font-weight: 900;
+        }
+        nav a:last-child img { 
+            width: 40px;
+            height: 40px;
+        }
+        /*HEADER*/
+        header{
+            height: 300px;
+            padding: 150px 0 0 0;
+            background: var(--terra);
+        }
+        header h2{
+            padding: 10px 40px;
+            font-size: 2em;
+            line-height: 1.2em;
+            color: var(--negro);
+        }
+        /*MAIN*/
+        section{
+            position: relative;
+        }
+        .titols{
+            padding: 150px 40px 0 40px;
+            color: white;
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+        .titols h3{
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .titols h4{
+            font-size: 2em;
+            font-weight: 400;
+        }
+        .content_img{
+            width: 100%;
+            display: flex;
+        }
+        .content_img img{
+            object-fit: cover;
+            object-position: center;
+        }
+        main section:last-child{
+            padding: 80px 0 80px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .question{
+            text-align: center;
+            font-weight: 400;
+            font-size: 2.0em;
+            margin: 0 0 2em 0;
+        }
+        .button{
+            align-self: center;
+            flex: 1;
+            font-size: 1.4em;
+            padding: 2em;
+            border: 1px solid var(--rosa);
+        }
+        .button:hover{
+            background: var(--rosa);
+            border: 1px solid white;
+            color: white;
+        }
+        /*FOOTER*/
+        footer{
+            padding: 30px 40px;
+            display:flex;
+        }
+        footer div:first-child{
+            /*width: 25%;*/
+            flex-shrink: 0.25;
+            flex-grow: 0.5;
+        }
+        footer div:nth-child(2){
+            /*width: 50%;*/
+            flex-shrink: 0.5;
+            flex-grow: 0.5;
+        }
+        footer menu{
+            flex-shrink: 0.25;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+      <div class="navegation">
+       <a href="#"><h1>Fieldwork</h1></a>
+       <a href="#">About</a>
+       <a href="#">Services</a>
+       <a href="#">Work</a>
+       <a href="#">Blog</a>
+       <a href="#">Contact</a>
+       </div>
+       <div class="logo">
+       <a href="#"><img src="img/SVG%20LOGO_01.svg" alt=""></a>
+       </div>
+   </nav>
+   <header>
+       <h2> Fildwork is a design and technology studio. We build Brands, digital products and services centred around the people who use them.</h2>
+   </header>
+   <main>
+       <section>
+          <div class="titols">
+           <h3> Fabled</h3>
+           <h4> A storytelling plataform to create women in literature</h4>
+           <h5> View the project</h5>
+           </div>
+           <div class="content_img">
+           <img src="img/Illustrated%20house%20used%20as%20inspiration%20in%20the%20Fabled%20digital%20product.png" alt="">
+           </div>
+       </section>
+       <section>
+          <div class="titols">
+           <h3> Penguin Like a Woman</h3>
+           <h4> A camping to celebrate women in literature</h4>
+           <h5> View the project</h5>
+           </div>
+           <div class="content_img">
+           <img src="img/Penguin%20Like%20a%20Woman.jpeg" alt="">
+           </div>
+       </section>
+       <section>
+          <div class="titols">
+           <h3> Friends of the Eath Nature Kit</h3>
+           <h4> Encouraging charity donations with a kit for nature conscious people</h4>
+           <h5> View the project</h5>
+           </div>
+           <div class="content_img">
+           <img src="img/Illustrated%20nature%20scene%20for%20the%20Friends%20of%20the%20Earth%20Nature%20Kit.jpeg" alt="">
+           </div>
+       </section>
+       <section>
+           <h3 class="question"> Want to talk to us about your brand or digital product?</h3>
+           <h4 class="button">Get in touch</h4>
+        </section>
+   </main>
+   <footer>
+       <div>
+          <h3>Find us</h3> 
+          <p>Fieldwork</p>
+          <p>Colony</p>
+          <p>Jactin House</p>
+          <p>24Hood Street</p>
+          <p>Ancroats Manchester</p>
+          <p>M4 GWX</p>
+       </div>
+       <div>
+           <h3>Get in touch</h3>
+           <p><a href="mailto:hello@madebyfieldwork">hello@madebyfieldwork.com</a>
+           </p>
+       </div>
+       <menu>
+        <a href="#"><i class="fab fa-github"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-facebook-square"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       </menu>
+       <div></div>
+   </footer>
+</body>
+</html>
